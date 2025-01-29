@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+
+@media screen and (max-width: 600px) {
+    nav{
+        flex-direction: column;
+    }
+}
+
+@keyframes scaleOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+
+    70% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: double 5px aliceblue;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    font-family: "Playwrite IN", serif;
+    transition: ease-in-out 0.5s;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: aliceblue;
+    transform: scale(1.2);
+    color: black;
+}
+
+nav a:active {
+    background-color: aliceblue;
+    transform: scale(1.2);
+    color: black;
+    animation: scaleOut 0.2s;
+}
+
+main {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+section {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: aliceblue;
+}
+
+header {
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px 0;
+}
+
+section img {
+    width: 100%;
+    border-radius: 5px;
+}
