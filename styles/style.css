@@ -23,6 +23,54 @@
     }
 }
 
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
 nav{
     display: flex;
     list-style: none;
@@ -32,6 +80,8 @@ nav{
     background-color: black;
     padding: 10px;
     border-radius: 5px;
+    animation: slideInDown 1s;
+    transition: ease-in-out 0.5s;
 }
 
 nav a {
@@ -67,6 +117,7 @@ section {
     border-radius: 5px;
     margin: 10px;
     background-color: aliceblue;
+    animation: slideInUp 1s;
 }
 
 header {
@@ -77,6 +128,7 @@ header {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     margin: 20px 0;
+    animation: slideInDown 1s;
 }
 
 footer {
@@ -87,6 +139,7 @@ footer {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     margin: 20px 0;
+    animation: slideInUp 1s;
 }
 
 section img {

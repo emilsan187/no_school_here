@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "/Users/emilsanna/Documents/no_school_here/sites/index.html"
+            "file": "/Users/emilsanna/Documents/no_school_here/index.html"
         }
     ]
 }
